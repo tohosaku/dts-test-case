@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "npm run clean && tsc && dts-bundle-generator -o dist/output.d.ts ./dist/src/input.d.ts",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "dts-bundle-generator": "^4.2.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3"
+  }
+}
